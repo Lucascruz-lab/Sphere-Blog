@@ -1,0 +1,107 @@
+#filtros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    margin-top: 3em;
+}
+
+#filtros ul, #filtros div {
+    display: flex;
+    padding: 10px 20px;
+    margin: 0 auto;
+    list-style: none;
+    gap: 1em;
+}
+
+#filtros .botoes-filtro {
+    background-color: #333333;
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#filtros .botoes-filtro:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#filtros .image-container {
+    position: relative;
+    width: 25em;
+    height: 30em;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#filtros .image-container img {
+    padding: 1em;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+}
+
+#filtros .image-container:hover img{
+    transform: scale(1.3);
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 30px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-container .overlay h3 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.image-container .overlay p {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 1em;
+}
+
+#sobre {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#sobre h2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #4F88A3;
+}
+
+#sobre p {
+    font-size: 1.5em;
+    padding: 1em;
+}
