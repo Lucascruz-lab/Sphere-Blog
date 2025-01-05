@@ -148,7 +148,9 @@
     border-radius: 30px;
     padding: 10px 20px;
     font-weight: bold;
-
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #Artigos {
@@ -163,23 +165,27 @@
     margin-bottom: 1.5rem;
 }
 
+.layout-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+    align-items: start;
+}
+
 .lista-artigos {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 1em;
     list-style: none;
     padding: 0;
     margin: 0;
-    max-width: 1200px;
+    
 }
 
 .lista-artigos li {
     width: 100%;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .image-artigo {
@@ -233,6 +239,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
+    overflow: hidden;
     gap: 0.5em;
     height: 100%;
     width: 100%;
@@ -257,4 +264,47 @@
     text-align: left;
     padding: 1em;
     margin-top: 2em;
+}
+
+.sidebar {
+    padding: 1em;
+    position: sticky;
+    top: 2em;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar h3 {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 0.5em;
+}
+
+.sidebar p {
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #111111;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1em;
+}
+
+.sidebar ul li {
+    display: inline-block;
+}
+
+.sidebar ul li a {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #111111;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sidebar ul li a:hover {
+    color: #0056b3;
 }
