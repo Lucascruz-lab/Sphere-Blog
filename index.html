@@ -9,67 +9,31 @@
 <body>
     <header id="barra-navegação">
         <nav id="navegação">
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Artigos</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Destaques</a></li>
-            </ul>
             <span id="logo">Sphere</span>
-            <a id="botao-header" href="">Inscreva-se</a>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Artigos">Artigos</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#Categorias">Categorias</a></li>
+            </ul>
+            <a id="botao-header" href="#newsletter">Inscreva-se</a>
         </nav>
         
-        <div>
-            <h1>Bem-vindo ao sphere</h1>
+        <div id="Home">
+            <h1>Bem-vindo ao SPHERE</h1>
             <p>Programação, Marketing Digital, Criatividade e Produtividade</p>
-            <a href="">Explore os Artigos</a>
+            <a href="#Artigos">Explore os Artigos</a>
         </div>
     </header>
 
     <main>
-        <section id="filtros">
+        <section id="Categorias">
+            <h2>Categorias</h2>
             <ul>
-                <li><button class="botoes-filtro">Todos</button></li>
-                <li><button class="botoes-filtro">Programação</button></li>
-                <li><button class="botoes-filtro">Criatividade</button></li>
-                <li><button class="botoes-filtro">Marketing</button></li>
-                <li><button class="botoes-filtro">Produtividade</button></li>
-            </ul>
-
-            <ul>
-                <li>
-                    <a href="">
-                        <div class="image-container">
-                            <img src="public/assets/images/pexels-markusspiske-360591.jpg" alt="imagem de programação">
-                            <div class="overlay">
-                                <h3>Programação</h3>
-                                <p>Técnicas, ferramentas e  dicas práticas para desenvolver soluções incríveis, seja você iniciante ou profissional.</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="image-container">
-                            <img src="public/assets/images/pexels-pixabay-256514.jpg" alt="imagem de criatividade">
-                            <div class="overlay">
-                                <h3>Criatividade</h3>
-                                <p>Inspirações e ideais para desbloquear sua criatividade e transformar conceitos em realidade.</p>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <div class="image-container">
-                            <img src="public/assets/images/pexels-mikael-blomkvist-6476808.jpg" alt="imagem de marketing">
-                            <div class="overlay">
-                                <h3>Marketing</h3>
-                                <p>Estratégias modernas para alcançar públicos, impulsionar marcas e criar presença online.</p>
-                            </div>
-                        </div>    
-                    </a>
-                </li>
+                <li><a href="">Tecnologia</a></li>
+                <li><a href="">Marketing Digital</a></li>
+                <li><a href="">Produtividade</a></li>
+                <li><a href="">Criatividade</a></li>
             </ul>
         </section>
 
@@ -100,7 +64,6 @@
                                 <div class="image-artigo">
                                     <img src="public/assets/images/pexels-eva-bronzini-6956226.jpg" alt="">
                                     <div class="overlay-artigo">
-                                        <p class="data-artigo">Seg 1, 2025</p>
                                         <h4>Comunidades Que Conectam e Inspiram</h4>
                                     </div>
                                 </div>
@@ -114,7 +77,6 @@
                                 <div class="image-artigo">
                                     <img src="public/assets/images/pexels-cottonbro-4069292.jpg">
                                     <div class="overlay-artigo">
-                                        <p class="data-artigo">Seg 1, 2025</p>
                                         <h4>Aproveite as Horas: Como Fazer Acontecer</h4>
                                     </div>
                                 </div> 
@@ -128,7 +90,6 @@
                                 <div class="image-artigo">
                                     <img src="public/assets/images/pexels-rakicevic-nenad-233369-1262302.jpg">
                                     <div class="overlay-artigo">
-                                        <p class="data-artigo">Seg 1, 2025</p>
                                         <h4>Dê Forma aos Seus Sonhos: A magia da Criatividade</h4>
                                     </div>
                                 </div>    
@@ -141,7 +102,9 @@
                         <h3>Lucas Cruz</h3>
                         <p>Olá, sou Lucas Cruz! Estudante de Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia e criatividade. Aqui compartilho insights e dicas sobre programação, marketing digital e produtividade.</p>
                         <ul>
-                            <li><a href=""><ion-icon></ion-icon></a></li>
+                            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
+                            <li><a href=""><ion-icon name="logo-github"></ion-icon></a></li>
+                            <li><a href=""><ion-icon name="logo-linkedin"></ion-icon></a></li>
                         </ul>
                     </aside>
                     <aside class="sidebar-Artigos">
@@ -160,25 +123,29 @@
     <footer>
         <div>
             <h2>SPHERE</h2>
-            <p>© 2025 SPHERE. Todos os direitos reservados.</p>
+            <p>&copy;2025 SPHERE. Todos os direitos reservados.</p>
         </div>
         
-        <div>
+        <div class="links">
             <h2>Links Úteis</h2>
             <ul>
                 <li><a href="">Sobre</a></li>
                 <li><a href="">Artigos</a></li>
-                <li><a href="">Newslette</a></li>
+                <li><a href="">Newsletter</a></li>
             </ul>
         </div>
-        <div>
+        <div class="links">
             <h2>Redes Sociais</h2>
             <ul>
-                <li><a href="">instagram</a></li>
-                <li><a href="">github</a></li>
-                <li><a href="">Linkedin</a></li>
+                <li><a href=""><ion-icon name="logo-instagram"></ion-icon> Instagram</a></li>
+                <li><a href=""><ion-icon name="logo-github"></ion-icon> Github</a></li>
+                <li><a href=""><ion-icon name="logo-linkedin"></ion-icon> Linkedin</a></li>
             </ul>
         </div>
     </footer>
+
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

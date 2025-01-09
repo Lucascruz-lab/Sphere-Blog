@@ -12,6 +12,10 @@ footer h2 {
     margin-bottom: 1rem;
 }
 
+footer .links h2 {
+    font-size: 2em;
+}
+
 footer p {
     margin-bottom: 2em;
     font-size: 1em;
@@ -36,8 +40,9 @@ footer ul li a {
     text-decoration: none;
     color: #ffffff;
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: 600;
     transition: color 0.3s ease;
+    gap: 1em;
 }
 
 footer ul li a:hover {

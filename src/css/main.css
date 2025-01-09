@@ -1,4 +1,4 @@
-#filtros {
+#Categorias {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,13 @@
     margin-top: 3em;
 }
 
-#filtros ul, #filtros div {
+#Categorias h2 {
+    font-size: 4em;
+    font-weight: bold;
+    color: #4F88A3;
+}
+
+#Categorias ul {
     display: flex;
     padding: 10px 20px;
     margin: 0 auto;
@@ -15,9 +21,9 @@
     gap: 1em;
 }
 
-#filtros .botoes-filtro {
-    background-color: #333333;
-    color: #ffffff;
+#Categorias ul li {
+    background-color: #ffffff;
+    color: #111111;
     border-radius: 20px;
     padding: 0.5em 1em;
     border: none;
@@ -27,12 +33,24 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#filtros .botoes-filtro:hover {
+#Categorias ul li a {
+    text-decoration: none;
+    color: #111111;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 0.8em;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#Categorias ul li a:hover {
     background-color: #0056b3;
+    color: #ffffff;
     transform: scale(1.05);
 }
 
-#filtros .image-container, .image-artigo {
+.image-artigo {
     position: relative;
     width: 25em;
     height: 30em;
@@ -40,7 +58,7 @@
     overflow: hidden;
 }
 
-#filtros .image-container img, .image-artigo img {
+.image-artigo img {
     padding: 1em;
     object-fit: cover;
     width: 100%;
@@ -49,11 +67,11 @@
     transition: transform 0.3s ease;
 }
 
-#filtros .image-container:hover img, .image-artigo:hover img{
+.image-artigo:hover img{
     transform: scale(1.3);
 }
 
-.image-container .overlay, .image-artigo .overlay-artigo {
+.image-artigo .overlay-artigo {
     position: absolute;
     top: 0;
     left: 0;
@@ -70,23 +88,23 @@
     border-radius: 30px;
 }
 
-.image-container:hover .overlay, .image-artigo:hover .overlay-artigo {
+.image-artigo:hover .overlay-artigo {
     opacity: 1;
 }
 
-.image-container .overlay h3, .image-artigo .overlay-artigo h4 {
+.image-artigo .overlay-artigo h4 {
     color: #ffffff;
     font-size: 1.5em;
-    margin-bottom: 0.5em;
+    margin-top: 4em;
 }
 
-.image-container .overlay p, .image-artigo .overlay-artigo p {
+.image-artigo .overlay-artigo .data-artigo {
     font-size: 1em;
     color: #ffffff;
-    text-align: center;
-    justify-content: center;
-    padding: 0 1em;
+    margin-bottom: 0.5em;
+    
 }
+
 
 #sobre {
     padding: 2em;
@@ -142,7 +160,7 @@
 }
 
 #newsletter form button{
-    background-color: #0056b3;
+    background-color: #007BFF;
     color: #ffffff;
     border: none;
     border-radius: 30px;
@@ -151,6 +169,12 @@
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#newsletter form button:hover {
+    background-color: #0056b3;
 }
 
 #Artigos {
@@ -230,7 +254,7 @@
     font-weight: bold;
     color: #000000;
     padding: 0.5em;
-    margin-top: 4em;
+    
     text-align: left;
 }
 
@@ -268,7 +292,7 @@
 
 .sidebar, .sidebar-Artigos {
     padding: 1em;
-    position: sticky;
+    position: static;
     top: 2em;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -324,7 +348,9 @@
 .sidebar-Artigos ul li a {
     text-decoration: none;
     color: #111111;
-    font-size: 1.1em;
+    font-size: 1.em;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
 .sidebar ul li a:hover {
@@ -332,7 +358,8 @@
 }
 
 .sidebar-Artigos ul li a:hover {
-    outline: #111111;
+    color: #0056b3;
+    
 }
 
 .sidebar-container {
