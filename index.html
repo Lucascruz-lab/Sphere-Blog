@@ -30,10 +30,11 @@
         <section id="Categorias">
             <h2>Categorias</h2>
             <ul>
-                <li><a href="">Tecnologia</a></li>
-                <li><a href="">Marketing Digital</a></li>
-                <li><a href="">Produtividade</a></li>
-                <li><a href="">Criatividade</a></li>
+                <li><a href="#" data-category="todos">Todos</a></li>
+                <li><a href="#" data-category="tecnologia">Tecnologia</a></li>
+                <li><a href="#" data-category="marketing-digital">Marketing Digital</a></li>
+                <li><a href="#" data-category="produtividade">Produtividade</a></li>
+                <li><a href="#" data-category="criatividade">Criatividade</a></li>
             </ul>
         </section>
 
@@ -61,7 +62,7 @@
             <div class="layout-grid">
                 <ul class="lista-artigos">
                     <li>
-                        <article class="artigos-post">
+                        <article data-category="marketing-digital" class="artigos-post">
                             <a href="/src/artigos-post/Comunidades-Que-Conectam-e-Inspiram.html">
                                 <div class="image-artigo">
                                     <img src="public/assets/images/pexels-eva-bronzini-6956226.jpg" alt="">
@@ -74,7 +75,7 @@
                     </li>  
                     
                     <li>
-                        <article class="artigos-post">
+                        <article data-category="produtividade" class="artigos-post">
                             <a href="src/artigos-post/Aproveite-as-Horas.html">
                                 <div class="image-artigo">
                                     <img src="public/assets/images/pexels-cottonbro-4069292.jpg">
@@ -87,7 +88,7 @@
                     </li>
 
                     <li>
-                        <article class="artigos-post">
+                        <article data-category="criatividade" class="artigos-post">
                             <a href="src/artigos-post/De-Forma-aos-Seus-Sonhos.html">
                                 <div class="image-artigo">
                                     <img src="public/assets/images/pexels-rakicevic-nenad-233369-1262302.jpg">
@@ -147,7 +148,8 @@
     </footer>
 
 
-<script src="src/scripts/mais.js"></script>
+<script src="src/scripts/main.js" defer></script>
+<script src="src/scripts/categorias.js" defer></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

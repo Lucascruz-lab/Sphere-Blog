@@ -50,6 +50,16 @@
     transform: scale(1.05);
 }
 
+article {
+    display: none;
+}
+
+article.mostrar {
+    display: block;
+    padding: 10px;
+    margin: 5px;
+}
+
 .image-artigo {
     position: relative;
     width: 25em;
