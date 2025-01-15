@@ -1,19 +1,13 @@
 #Categorias {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 1em;
     margin-top: 3em;
 }
 
-#Categorias h2 {
-    font-size: 4em;
-    font-weight: bold;
-    color: #4F88A3;
-}
 
-#Categorias ul {
+#Categorias {
     display: flex;
     padding: 10px 20px;
     margin: 0 auto;
@@ -21,7 +15,7 @@
     gap: 1em;
 }
 
-#Categorias ul li {
+#Categorias li {
     background-color: #ffffff;
     color: #111111;
     border-radius: 20px;
@@ -33,31 +27,31 @@
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-#Categorias ul li a {
+#Categorias li button {
     text-decoration: none;
     color: #111111;
     font-size: 1em;
     font-weight: 700;
+    border: none;
     border-radius: 30px;
     padding: 0.8em;
+    cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#Categorias ul li a:hover {
+#Categorias li button:hover {
     background-color: #0056b3;
     color: #ffffff;
     transform: scale(1.05);
 }
 
-article {
+article .artigos-post {
     display: none;
 }
 
-article.mostrar {
+article .artigos-post {
     display: block;
-    padding: 10px;
-    margin: 5px;
 }
 
 .image-artigo {

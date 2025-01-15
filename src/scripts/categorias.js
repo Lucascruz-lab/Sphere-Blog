@@ -1,24 +1,22 @@
 document.addEventListener("DOMContentLoaded", ()=> {
     console.log('JS carregado')
 
-    const linksCategorias = document.querySelectorAll('#Categorias a')
-    const artigos = document.querySelectorAll('#Artigos article')
-    
-    linksCategorias.forEach((link) => {
-        link.addEventListener('click', (event)=> {
-            event.preventDefault()
-            
-            const categoria = link.getAttribute('data-category')
-            console.log('Categoria clicada:', categoria)
-            
-            artigos.forEach((artigo)=> {
-                console.log(`Artigo: ${artigo.textContent}, Categoria: ${linksCategorias}`)
-                artigo.classList.remove("mostrar")
+    const buttons = document.querySelectorAll('#Categorias button[data-category]')
+    const artigos = document.querySelectorAll('#Artigos .artigos-post')
 
-                if (categoria === "todos"){
-                    artigo.classList.add("mostrar")
-                } else if (artigo.getAttribute("data-category") === categoria) {
-                    artigo.classList.add("mostrar")
+    console.log('Botões encontrados:', buttons.length)
+    console.log('Artigos encontrados:', artigos.length)
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.dataset.category
+            console.log('Categoria selecionada:', category)
+
+            artigos.forEach(artigo => {
+                if (category === 'todos' || artigo.dataset.category === category) {
+                    artigo.style.display = 'block'
+                } else {
+                    artigo.style.display = 'none'
                 }
             })
         })
