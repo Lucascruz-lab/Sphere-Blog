@@ -10,13 +10,16 @@
     <header id="barra-navegação">
         <nav id="navegação">
             <span id="logo">Sphere</span>
-            <ul>
-                <li><a href="#Home">Home</a></li>
-                <li><a href="#Artigos">Artigos</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#Categorias">Categorias</a></li>
-            </ul>
-            <a id="botao-header" href="#newsletter">Inscreva-se</a>
+            <div id="menu" class="menu">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#Artigos">Artigos</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#Categorias">Categorias</a></li>
+                    <a id="botao-header" href="#newsletter">Inscreva-se</a>
+                </ul>
+            </div>
+            <button id="menu-toggle" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">☰</button>
         </nav>
         
         <div id="Home">
@@ -111,7 +114,7 @@
             <p id="newsletter-message"></p>
             <p>Estamos preparando novidades! Sua assinatura será ativada em breve.</p>
         </section>
-        
+
         <section id="sobre">
             <h2>Sobre o Sphere</h2>
             <p>No Sphere, acreditamos que conhecimento e criatividade andam de mãos dadas. Nosso blog é um ponto de encontro para apaixonados por programação, marketing digital, produtividade e inovação. Criamos conteúdo que inspira, ensina e motiva você a crescer em todas as áreas da sua vida. Aqui, cada ideia é uma nova esfera de possibilidades - sempre com um toque de criatividade e praticidade.</p>
@@ -149,6 +152,7 @@
 
 <script src="src/scripts/main.js" defer></script>
 <script src="src/scripts/categorias.js" defer></script>
+<script src="src/scripts/menuBtn.js" defer></script>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
