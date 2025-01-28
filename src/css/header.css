@@ -147,3 +147,98 @@ header div a:hover {
 .menu.active {
     display: flex;
 }
+
+@media (max-width: 380px) {
+    #logo {
+        font-size: 1.5rem;
+    }
+
+    #navegação {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #navegação ul {
+        gap: 8px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #navegação ul li a {
+        font-size: 0.9rem;
+    }
+
+    #botao-header {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        width: auto;
+    }
+
+    header {
+        width: 100%;
+        box-sizing: border-box;
+
+    }
+
+    header div h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #navegação {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    #navegação ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #menu {
+        width: 50%;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    #logo {
+        font-size: 2.5rem;
+    }
+
+    #botao-header {
+        padding: 8px 16px;
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    #Home a {
+        width: 40%;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        padding: 20px 40px;
+    }
+
+    #logo {
+        font-size: 3rem;
+    }
+
+    #navegação ul {
+        gap: 30px;
+    }
+
+    #botao-header {
+        padding: 10px 24px;
+        width: auto;
+    }
+}
