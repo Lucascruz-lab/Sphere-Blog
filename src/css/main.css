@@ -251,7 +251,7 @@ article .artigos-post {
     transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.artigos-post .overlay-artigo .data-artigo {
+.artigos-post .overlay-artigo {
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 30px;
     font-size: 0.8em;
@@ -371,3 +371,97 @@ article .artigos-post {
     flex-direction: column;
     gap: 1.5em;
 }
+
+/* ===== Mobile Pequeno (até 380px) ===== */
+@media (max-width: 380px) {
+    #Categorias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .lista-artigos {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9rem;
+    }
+
+    #newsletter {
+        padding: 1em;
+        height: auto;
+    }
+
+    #newsletter form #email {
+        width: 100%;
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+
+    .image-artigo {
+        width: 100%;
+        height: auto;
+    }
+
+    #sobre h2,
+    #Artigos h2 {
+        font-size: 2rem;
+    }
+
+    #sobre p {
+        font-size: 0.9rem;
+        text-align: left;
+    }
+}
+
+/* ===== Tablet (381px até 768px) ===== */
+@media (max-width: 768px) {
+    #Categorias {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .layout-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .lista-artigos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .artigos-post .overlay-artigo {
+        font-size: 0.7rem;
+    }
+
+    #newsletter {
+        padding: 1em;
+        height: auto;
+    }
+
+    #newsletter form #email {
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    #sobre {
+        text-align: center;
+        padding: 40px;
+    }
+
+    #sobre h2,
+    #Artigos h2 {
+        font-size: 2.5rem;
+    }
+
+    #sobre p {
+        text-align: left;
+    }
+}
+
