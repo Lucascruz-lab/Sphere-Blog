@@ -56,3 +56,40 @@ footer .links-container {
     gap: 2em;
     text-align: left;
 }
+
+@media (max-width: 380px) {
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1em;
+    }
+
+    footer h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    footer .links h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer h2 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    footer .links h2 {
+        font-size: 1.5em;
+    }
+}

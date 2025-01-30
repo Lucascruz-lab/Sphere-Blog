@@ -126,6 +126,7 @@ article .artigos-post {
 
 #sobre p {
     font-size: 1.5em;
+    font-weight: 600;
     padding: 1em;
 }
 
@@ -252,7 +253,7 @@ article .artigos-post {
 }
 
 .artigos-post .overlay-artigo {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 30px;
     font-size: 0.8em;
     font-weight: bold;
