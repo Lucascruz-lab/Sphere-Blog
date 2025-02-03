@@ -78,7 +78,7 @@ header div h1 {
 header div p {
     font-family: var(--font-primary);
     font-size: 1.2em;
-    font-weight: bold;
+    font-weight: 500;
     color: #333333;
 }
 
