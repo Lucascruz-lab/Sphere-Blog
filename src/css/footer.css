@@ -57,7 +57,7 @@ footer .links-container {
     text-align: left;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     footer {
         padding: 10px;
         display: flex;

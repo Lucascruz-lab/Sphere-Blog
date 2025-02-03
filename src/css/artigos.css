@@ -84,7 +84,7 @@ footer {
     color: #ffffff;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
     article h1 {
         font-size: 1.8rem;
     }
