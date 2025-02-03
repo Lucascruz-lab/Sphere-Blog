@@ -1,7 +1,7 @@
 #Categorias {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     padding: 1em;
     margin-top: 3em;
 }
